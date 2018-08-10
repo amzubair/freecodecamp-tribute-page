@@ -31,6 +31,7 @@ body {
     justify-content: center;
     text-align: center;
     align-items: center;
+    position: relative;
 }
 
 .split.left img {
@@ -51,7 +52,34 @@ body {
     font-size: 18px;
     font-weight: 400;
     margin: 0px;
+    width: 300px;
 }
+
+.split.left h2 {
+    position: relative;
+    display: inline-block;
+}
+
+.split.left h2:before,
+.split.left h2:after {
+    content: '';
+    position: absolute;
+    background-color: black;
+    height: 1px;
+    width: 40px;
+    top: 12px;
+}
+
+.split.left h2:before {
+    right: 100%;
+    margin-right: 6px;
+}
+
+.split.left h2:after {
+    left: 100%;
+    margin-left: 6px;
+}
+
 
 .split.right {
     text-align: left;
